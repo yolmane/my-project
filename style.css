@@ -9,6 +9,18 @@ body{
 }
 a { text-decoration: none;
 }
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
 .header{
     height: 120px;
     position: relative;
@@ -55,19 +67,23 @@ a { text-decoration: none;
 .main-page-wrapper{
     background: url("./img/elephant.png") center top no-repeat, url("./img/dark.png") right bottom no-repeat;
 }
-ul{
-    padding: 0;
-    margin: 0;
-}
-li{
-    list-style-type: none;
+.text__choice{
+    display: inline;
+    width: 100%;    
 }
 .container{
     margin: 0 auto;
     max-width: 1140px;
 }
-.offers__list{
-    list-style-type: none;
+.container__footer{
+    margin: 0 auto;
+    max-width: 1140px;
+    padding-bottom: 18px;
+}
+.container__middle{
+    margin: 0 auto;
+    max-width: 1140px;
+    
 }
 .hello{
     width: 520px;
@@ -106,46 +122,64 @@ p{
     max-width: 1150px;
 }
 .section{
-    margin-bottom: 138px;
+    margin-bottom: 0px;
 }
 .section__title{
     font-size: 36px;
     font-weight: bold;
-    margin-bottom: 45px;
+    margin: 127px 56px 51px;
+}
+
+.offers__list{
+    list-style-type: none;
+}
+.offers__images{
+    display: inline-block;
+    margin: 0px 21px 29px 25px;
 }
 .offers__item{
-    min-height: 470px;
+    margin-top: 22px;
+    min-height: 449px;
     background: #fff;
     border-radius: 2px;
     display: inline-block;
-    margin-right: 27px;
+    margin-right: 10px;
     width: 362px;
 }
 .offers__header{
-    min-height: 162px;
-    margin-bottom: 28px;
+    min-height: 149px;
 }
 .offers__content{
-    padding: 36px 30px;
+    padding: 18px 21px 19px 17px;
+}
+.offers__jist{
+    font-size: 14px;
+}
+.offers__text p{
+    font-size: 14px;
 }
 .offers__title{
     font-weight: bold;
     font-size: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    margin-top: 9px;
 }
-.offers__prices--cell {
+.offers__prices-cell {
     display: inline-block;
+    vertical-align: top;
+    width: 115px;
+    margin-right: 30px;
 }
-*{
-    box-sizing: border-box;
+.offers__prices-cell:last-child{
+    margin-right: 0;
 }
 .title--fire{
     font-size: 36px;
 }
 .hot__tour{
     padding-bottom: 216px;
-}
-
+    padding-top: 33px;
+}   
 .news__item{
     width: 555px;
     display: inline-block;
@@ -165,8 +199,8 @@ p{
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 25px 30px;
-    min-height: 140px;
+    padding: 26px 23px 13px 30px;
+    min-height: 172px;
 }
 .news__date{
     font-size: 14px;
@@ -175,13 +209,15 @@ p{
 .news__title{
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
+    padding-top: 12px;
 }
 .news{
-    margin-bottom: 55px;
+    margin-bottom: 48px;
 }
 .pager{
     text-align: center;
+    padding-bottom: 145px;
 }
 .pager__display,.pager__list{
     display: inline-block;
@@ -211,6 +247,9 @@ p{
     display: inline-block;
     margin-left: 8px;
 }
+.odd {
+    padding-bottom: 55px;
+}
 .about::before, .about__desc{
     display: inline-block;
     vertical-align: top;
@@ -228,15 +267,16 @@ p{
     background: url("./img/mountains.png");
     display: inline-block;
     vertical-align: top;
-    padding: 80px 90px;
-    width: 780px;
-    margin-left: -142px;
-    margin-top: 166px;
+    padding: 87px 169px 0px 74px;
+    width: 785px;
+    margin-left: -147px;
+    margin-top: 97px;
 }
 .about__title{
     font-weight: bold ;
     font-size: 36px;
     margin-bottom: 40px;
+    margin-top: -19px;
 }
 .about__desc-text{
     margin-bottom: 42px;
@@ -257,10 +297,18 @@ p{
 .contacts__desc{
     color: #9A9A9A;
 }
+.riba{
+    line-height: 27px;
+    font-size: 16px;
+    padding-bottom: 53px;
+}
+.class{
+    padding-bottom: 67px;
+}
 .socials{
     position: absolute;
-    top: 53px;
-    right:300px;
+    top: 32px;
+    right:270px;
 }
 .socials__item{
     display: inline-block ;
