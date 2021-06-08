@@ -127,7 +127,7 @@ p{
 .section__title{
     font-size: 36px;
     font-weight: bold;
-    margin: 127px 56px 51px;
+    margin: 127px -3px 51px;
 }
 
 .offers__list{
@@ -143,7 +143,7 @@ p{
     background: #fff;
     border-radius: 2px;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 15px;
     width: 362px;
 }
 .offers__header{
@@ -154,6 +154,7 @@ p{
 }
 .offers__jist{
     font-size: 14px;
+    padding-bottom: 13px;
 }
 .offers__text p{
     font-size: 14px;
