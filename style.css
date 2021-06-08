@@ -313,7 +313,7 @@ p{
 .socials__item{
     display: inline-block ;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 .socials__item:last-child{
     margin-right: 0 ;
