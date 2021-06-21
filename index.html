@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=1200, initial-scale=1.0">
+    <link rel="icon" href="./img/elephanthead.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,41 +14,37 @@
 
 <body>
     <div class="wrapper main-page-wrapper">
-        <div class="wrapper">
-            <div class="wrapper__content">
-                    <header class="header-container"> 
-                        <div class="container__header">
-                            <div class="heaader">
-                                <div class="footer__col">
-                                <a href="#" class="logo">
-                                    <img src="./img/logo.png" alt="logo company" class="logo__img">
-                                </a>
-                                <nav class="menu">
-                                    <ul class="menu__list">
-                                        <li class="menu__item"> <a href="./index.html" class="menu__link text__white">Главная</a> </li>
-                                        <li class="menu__item"> <a href="./services.html" class="menu__link text__white">Услуги</a> </li>
-                                        <li class="menu__item"> <a href="#" class="menu__link text__white">Отзывы</a> </li>
-                                    </ul>
-                            </div>
-                            
-                            </nav> 
-                            
-                            <div class="contacts content--rigth">
-                                <a href="tel:+780007003030" class="contacts__phone content--rigth text__white">8 800 700 30 30</a>
-                                <div class="contacts__desc">График работы</div>
-                            </div>
-                                
-                            </div>
+        <div class="all">
+            <div class="wrapper">
+                <header class="header">
+                    <div class="heaader">
+                        <div class="footer__col">
+                            <a href="#" class="logo">
+                            <img src="./img/logo.png" alt="logo company" class="logo__img">
+                            </a>
+                            <nav class="menu">
+                                <ul class="menu__list">
+                                    <li class="menu__item"> <a href="./index.html" class="menu__link text__white">Главная</a> </li>
+                                    <li class="menu__item"> <a href="./services.html" class="menu__link text__white">Услуги</a> </li>
+                                    <li class="menu__item"> <a href="./reviews.html" class="menu__link text__white">Отзывы</a> </li>
+                                </ul>
+                            </nav>
                         </div>
-                    </header>
-                </div>
+                        <div class="contacts content--rigth">
+                            <a href="tel:+780007003030" class="contacts__phone content--rigth text__white">8 800 700 30 30</a>
+                            <div class="contacts__desc">График работы</div>
+                        </div>
+                    </div>    
+                </header>
+            </div>
+        </div>
 
                 <main class="maincontent">
                 <div class="hello">
                     <div class="hello hot__tour">
                         <h1 class="hello__title text__white">Авторские туры по Азии</h1>
                         <h4 class="hello__text text__white">Открой для себя Азию</h4>
-                        <a href="#" class="btn ">ПОДРОБНЕЕ</a>
+                        <a href="#" class="btn btn-color--red ">ПОДРОБНЕЕ</a>
                     </div>
                 </div>
 
@@ -86,7 +83,7 @@
                                             значение систем массового участия.
                                         </p>
                                     </div>
-                                    <a href="#" class="btn">Смотреть</a>
+                                    <a href="#" class="btn btn-color--white">Смотреть</a>
                                 </div>
                             </li>
                             <li class="offers__item">
@@ -109,7 +106,7 @@
                                             значение систем массового участия.
                                         </p>
                                     </div>
-                                    <a href="#" class="btn">Смотреть</a>
+                                    <a href="#" class="btn btn-color--red">Смотреть</a>
                                 </div>
                             </li>
                             <li class="offers__item">
@@ -132,7 +129,7 @@
                                             значение систем массового участия.
                                         </p>
                                     </div>
-                                    <a href="#" class="btn">Смотреть</a>
+                                    <a href="#" class="btn btn-color--white">Смотреть</a>
                                 </div>
                             </li>
                         </ul>
@@ -169,15 +166,15 @@
                         </div>
 
                         <div class="pager_i">
-                            <div class="pager__display text__white">Страница 1 и з 7</div>
+                            <div class="pager__display text__white">Страница 1 из 7</div>
                             <ul class="pager__list">
-                                <li class="pager__item pager__item--active"><a href="#" class="pager__link">1</a></li>
-                                <li class="pager__item"><a href="#" class="pager__link text__white">2</a></li>
-                                <li class="pager__item"><a href="#" class="pager__link text__white">3</a></li>
-                                <li class="pager__item"><a href="#" class="pager__link text__white">4</a></li>
-                                <li class="pager__item"><a href="#" class="pager__link text__white">5</a></li>
-                                <li class="pager__item"><a href="#" class="pager__link text__white">6</a></li>
-                                <li class="pager__item"><a href="#" class="pager__link text__white">7</a></li>
+                                <li class="pager__item"><a href="#" class="pager__link--white">1</a></li>
+                                <li class="pager__item"><a href="#" class="pager__link--white">2</a></li>
+                                <li class="pager__item"><a href="#" class="pager__link--white">3</a></li>
+                                <li class="pager__item"><a href="#" class="pager__link--white">4</a></li>
+                                <li class="pager__item"><a href="#" class="pager__link--white">5</a></li>
+                                <li class="pager__item"><a href="#" class="pager__link--white">6</a></li>
+                                <li class="pager__item"><a href="#" class="pager__link--white">7</a></li>
                             </ul>
                         </div>
 
@@ -196,7 +193,7 @@
                                             </p>
                                         </div>
                                         <div class="class">
-                                        <a href="#" class="btn ">подробнее</a>
+                                        <a href="#" class="btn btn-color--red">подробнее</a>
                                     </div>
                                     </div>
                                 </div>
@@ -217,7 +214,7 @@
                         <ul class="menu__list">
                             <li class="menu__item"> <a href="./index.html" class="menu__link text__white">Главная</a> </li>
                             <li class="menu__item"> <a href="./services.html" class="menu__link text__white">Услуги</a> </li>
-                            <li class="menu__item"> <a href="#" class="menu__link text__white">Отзывы</a> </li>
+                            <li class="menu__item"> <a href="./reviews.html" class="menu__link text__white">Отзывы</a> </li>
                         </ul>
                 </div>
                 
@@ -246,5 +243,6 @@
                 </div>
             </div>
         </footer>
+    </div>
 </body>
 </html>
