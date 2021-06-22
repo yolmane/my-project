@@ -439,7 +439,15 @@ p{
     position: absolute;
     bottom: 100%;
     right: 40px;
-
+}
+.contact__drop::after{
+    content:"";
+    display: block;
+    height: 9px;
+    width: 100%;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
 }
 .riba{
     line-height: 27px;
