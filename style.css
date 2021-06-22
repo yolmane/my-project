@@ -37,7 +37,7 @@ body, html{
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    overflow: hidden;
+    /*overflow: hidden;*/                
     min-width: 1200px;
 }
 .wrapper__container{
@@ -95,6 +95,8 @@ body, html{
     right: 0;
 }
 .fire{
+    height: fit-content;
+    align-items: center;
     display: flex;
 }
 .main-page-wrapper{
@@ -403,8 +405,41 @@ p{
 .footer__col--align--right{
     align-items: flex-end;
 }
-.contacts__desc{
+.contact__link{
     color: #9A9A9A;
+}
+.contact__list{
+    font-size: 13px;
+    color: #1e1f20;
+    line-height: 1.5em;
+}
+.contact__drop{
+    background-color: #ededed;
+    opacity: 0;
+    border-radius: 4px;
+    padding: 16px 20px;
+    width: 180px;
+    margin-top: 9px;
+    position: absolute;
+    right: 0;
+    pointer-events: none;
+}
+.contact__shedule:hover .contact__drop{
+    opacity: 1;
+    pointer-events: visible;
+}
+.contact__drop::before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 11px solid transparent;
+    border-top-width: 0;
+    border-bottom-color: #ededed;
+    position: absolute;
+    bottom: 100%;
+    right: 40px;
+
 }
 .riba{
     line-height: 27px;
@@ -779,18 +814,44 @@ margin-right: 20px;
     justify-content: center;
     background: url("./img/welcome.png") center bottom / cover no-repeat;
 }
-.welcome__shades{
-    flex: 1;
-    opacity: 0,7;
-}
 .central{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+}
+.central__asia{
+    opacity: 0;
+    animation: zoom .9s ease-in;
+    animation-fill-mode: forwards;
 }
 .open__asia {
     font-size: 18px;
     margin-bottom: 60px;
 }
 
+@keyframes zoom{
+    from {
+        transform: scale(.7);
+    }
+
+    20% {
+        transform: scale(1.15);
+    }
+
+    40% {
+        transform: scale(.9);
+    }
+
+    60% {
+        transform: scale(1.1);
+    }
+
+    80% {
+        transform: scale(.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
