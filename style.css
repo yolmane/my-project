@@ -1104,6 +1104,7 @@ p{
     line-height: 1.1;
 }
 .separator-container{
+    max-height: 363px;
     background: url(./img/couple.png) 69% 101% no-repeat;
     display: inline-block;
     flex: 2;
